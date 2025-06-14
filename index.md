@@ -87,6 +87,7 @@ h2 {
   border-bottom: 2px solid #333;
   padding-bottom: 0.5em;
   font-size: 1.8em;
+  margin-top: -0.5em;
 }
 
 h3 {
