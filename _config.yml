@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
 title: EarlySignal
 description: Early detection of incorrect system and service behaviors using ML
 show_downloads: false
@@ -8,4 +8,5 @@ google_analytics: # Add your Google Analytics ID here if needed
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag 
+  - jekyll-seo-tag
+  - jekyll-sitemap 
