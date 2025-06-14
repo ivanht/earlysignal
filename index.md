@@ -107,6 +107,7 @@ body {
 .sidebar {
   flex: 1;
   min-width: 400px;
+  padding-top: 2em;
 }
 
 h2 {
