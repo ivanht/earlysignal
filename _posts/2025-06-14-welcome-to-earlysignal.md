@@ -5,6 +5,10 @@ date: 2025-06-14
 categories: [announcement]
 ---
 
+<div class="back-link">
+  <a href="{{ site.baseurl }}/">← Back to Home</a>
+</div>
+
 # Welcome to EarlySignal
 
 EarlySignal is an innovative project focused on early detection of incorrect system and service behaviors using Machine Learning. Our mission is to help organizations identify and address potential issues before they impact their services and users.
@@ -96,5 +100,19 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.back-link {
+  margin-bottom: 2em;
+  padding: 0.5em 0;
+}
+
+.back-link a {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.back-link a:hover {
+  color: #0366d6;
 }
 </style> 
