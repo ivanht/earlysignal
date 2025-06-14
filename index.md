@@ -65,7 +65,7 @@ body {
   display: flex;
   gap: 4em;
   margin: 2em 0;
-  max-width: 1600px;
+  max-width: 2000px;
   padding: 0 2em 0 0;
   align-items: flex-start;
   background-color: #1a1a1a;
@@ -95,7 +95,7 @@ h3 {
   margin: 0 0 0.5em 0;
   color: white;
   font-size: 1.4em;
-  padding-left: 2em;
+  padding-bottom: 1em;
 }
 
 article {
@@ -114,7 +114,6 @@ article p {
   margin: 0.5em 0;
   line-height: 1.6;
   color: #e0e0e0;
-  padding-left: 2em;
 }
 
 .post-meta {
