@@ -1,5 +1,11 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 title: EarlySignal
-description: EarlySignal Project
+description: Early detection of incorrect system and service behaviors using ML
 show_downloads: true
-google_analytics: # Add your Google Analytics ID here if needed 
+google_analytics: # Add your Google Analytics ID here if needed
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag 
