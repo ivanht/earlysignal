@@ -37,6 +37,11 @@ title: EarlySignal
 </div>
 
 <style>
+body {
+  background-color: white;
+  color: #333;
+}
+
 .welcome-section {
   text-align: center;
   max-width: 800px;
@@ -61,10 +66,11 @@ title: EarlySignal
 .two-column-layout {
   display: flex;
   gap: 4em;
-  margin: 2em auto;
+  margin: 2em 0;
   max-width: 1600px;
-  padding: 0 2em;
+  padding: 0 2em 0 0;
   align-items: flex-start;
+  background-color: white;
 }
 
 .main-content {
@@ -108,6 +114,7 @@ article:last-child {
 article p {
   margin: 0.5em 0;
   line-height: 1.6;
+  color: #444;
 }
 
 .post-meta {
@@ -152,7 +159,7 @@ a:hover {
   .two-column-layout {
     flex-direction: column;
     gap: 2em;
-    padding: 0 1em;
+    padding: 0 1em 0 0;
   }
   
   .main-content {
