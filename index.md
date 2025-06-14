@@ -7,15 +7,11 @@ title: EarlySignal
 
 EarlySignal is an innovative project focused on early detection of incorrect system and service behaviors using Machine Learning.
 
-## Latest Posts
-
-Number of posts: {{ site.posts.size }}
-
 {% for post in site.posts %}
   <article>
     <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     <p>Date: {{ post.date }}</p>
-    <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
+    <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
   </article>
 {% endfor %}
 

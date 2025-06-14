@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Welcome to EarlySignal"
 date: 2025-06-14
 categories: [announcement]
@@ -62,4 +62,39 @@ We're constantly enhancing EarlySignal with:
 - Improved prediction accuracy
 - Integration with popular monitoring tools
 
-Stay tuned for more updates and features! 
+Stay tuned for more updates and features!
+
+<style>
+article {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-top: 1.5em;
+}
+
+ul, ol {
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+strong {
+  color: #444;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+</style> 
