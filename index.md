@@ -95,6 +95,7 @@ h3 {
   margin: 0 0 0.5em 0;
   color: white;
   font-size: 1.4em;
+  padding-left: 2em;
 }
 
 article {
@@ -113,6 +114,7 @@ article p {
   margin: 0.5em 0;
   line-height: 1.6;
   color: #e0e0e0;
+  padding-left: 2em;
 }
 
 .post-meta {
