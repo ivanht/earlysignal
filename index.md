@@ -45,6 +45,17 @@ body {
   padding: 2rem 6rem !important;
 }
 
+.project-name {
+  margin-bottom: 1.5rem !important;
+}
+
+.project-tagline {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  font-size: 1.5rem !important;
+  line-height: 1.6 !important;
+}
+
 .main-content {
   max-width: none !important;
   padding: 2rem 6rem !important;
