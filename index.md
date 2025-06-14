@@ -11,7 +11,7 @@ title: EarlySignal
 <div class="two-column-layout">
   <div class="main-content">
     <h2>Blog Posts</h2>
-    {% assign sorted_posts = site.posts | sort: 'title' %}
+    {% assign sorted_posts = site.posts | sort: 'path' %}
     {% for post in sorted_posts %}
       {% unless post.categories contains 'announcement' %}
         <article>
@@ -24,7 +24,7 @@ title: EarlySignal
 
   <div class="sidebar">
     <h2>Announcements</h2>
-    {% assign sorted_announcements = site.posts | sort: 'title' %}
+    {% assign sorted_announcements = site.posts | sort: 'path' %}
     {% for post in sorted_announcements %}
       {% if post.categories contains 'announcement' %}
         <article>
