@@ -93,7 +93,7 @@ body {
 
 .sidebar {
   flex: 1;
-  min-width: 800px;
+  min-width: 400px;
 }
 
 h2 {
