@@ -59,6 +59,7 @@ body {
   line-height: 1.6;
   color: #e0e0e0;
   margin: 0;
+  padding-bottom: 2em;
 }
 
 .two-column-layout {
@@ -95,7 +96,7 @@ h3 {
   margin: 0 0 0.5em 0;
   color: white;
   font-size: 1.4em;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
 }
 
 article {
