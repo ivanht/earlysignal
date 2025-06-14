@@ -66,7 +66,7 @@ body {
   display: flex;
   gap: 4em;
   margin: 2em 0;
-  max-width: 3000px;
+  max-width: 2000px;
   padding: 0 2em 0 0;
   align-items: flex-start;
   background-color: #1a1a1a;
@@ -77,11 +77,13 @@ body {
 }
 
 .main-content {
-  flex: 1;
+  flex: 2;
+  min-width: 800px;
 }
 
 .sidebar {
-  flex: 1;
+  flex: 2;
+  min-width: 800px;
 }
 
 h2 {
@@ -139,6 +141,10 @@ a:hover {
   .two-column-layout {
     max-width: 100%;
     gap: 3em;
+  }
+  
+  .main-content, .sidebar {
+    min-width: 600px;
   }
 }
 
