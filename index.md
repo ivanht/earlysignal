@@ -3,9 +3,10 @@ layout: default
 title: EarlySignal
 ---
 
-# Welcome to EarlySignal
-
-EarlySignal is an innovative project focused on early detection of incorrect system and service behaviors using Machine Learning.
+<div class="welcome-section">
+  <h1>Welcome to EarlySignal</h1>
+  <p class="welcome-text">EarlySignal is an innovative project focused on early detection of incorrect system and service behaviors using Machine Learning.</p>
+</div>
 
 <div class="two-column-layout">
   <div class="main-content">
@@ -36,25 +37,46 @@ EarlySignal is an innovative project focused on early detection of incorrect sys
 </div>
 
 <style>
+.welcome-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 3em auto;
+  padding: 0 2em;
+}
+
+.welcome-section h1 {
+  font-size: 2.5em;
+  color: #24292e;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.welcome-text {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
 .two-column-layout {
   display: flex;
   gap: 4em;
   margin: 2em auto;
-  max-width: 1400px;
+  max-width: 1600px;
   padding: 0 2em;
   align-items: flex-start;
 }
 
 .main-content {
-  flex: 3;
+  flex: 1;
   min-width: 0;
   padding-right: 2em;
 }
 
 .sidebar {
-  flex: 2;
-  min-width: 400px;
-  max-width: 600px;
+  flex: 1;
+  min-width: 500px;
+  max-width: 700px;
 }
 
 h2 {
@@ -102,18 +124,31 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .two-column-layout {
     max-width: 100%;
     gap: 3em;
   }
   
   .sidebar {
-    min-width: 350px;
+    min-width: 450px;
   }
 }
 
 @media (max-width: 768px) {
+  .welcome-section {
+    margin: 2em auto;
+    padding: 0 1em;
+  }
+
+  .welcome-section h1 {
+    font-size: 2em;
+  }
+
+  .welcome-text {
+    font-size: 1.1em;
+  }
+
   .two-column-layout {
     flex-direction: column;
     gap: 2em;
