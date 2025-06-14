@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to EarlySignal"
-date: 2025-06-214
+date: 2025-06-14
 categories: [announcement]
 ---
 
