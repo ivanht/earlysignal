@@ -5,9 +5,6 @@ date: 2025-06-14
 categories: [announcement]
 ---
 
-<div class="back-link">
-  <a href="{{ site.baseurl }}/">← Back to Home</a>
-</div>
 
 # Welcome to EarlySignal
 
@@ -67,6 +64,10 @@ We're constantly enhancing EarlySignal with:
 - Integration with popular monitoring tools
 
 Stay tuned for more updates and features!
+
+<div class="back-link">
+  <a href="{{ site.baseurl }}/">← Back to Home</a>
+</div>
 
 <style>
 article {

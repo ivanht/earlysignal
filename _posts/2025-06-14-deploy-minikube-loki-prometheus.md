@@ -5,9 +5,7 @@ date: 2025-06-14
 categories: [tutorial]
 ---
 
-<div class="back-link">
-  <a href="{{ site.baseurl }}/">← Back to Home</a>
-</div>
+
 
 # Deploying Minikube with Loki and Prometheus
 
@@ -164,6 +162,10 @@ Common issues and solutions:
 2. Configure log retention policies
 3. Create custom dashboards
 4. Set up automated backups
+
+<div class="back-link">
+  <a href="{{ site.baseurl }}/">← Back to Home</a>
+</div>
 
 <style>
 pre {
