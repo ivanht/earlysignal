@@ -75,14 +75,10 @@ body {
 
 .main-content {
   flex: 1;
-  min-width: 500px;
-  max-width: 700px;
 }
 
 .sidebar {
   flex: 1;
-  min-width: 500px;
-  max-width: 700px;
 }
 
 h2 {
@@ -136,10 +132,6 @@ a:hover {
     max-width: 100%;
     gap: 3em;
   }
-  
-  .main-content, .sidebar {
-    min-width: 450px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -160,16 +152,6 @@ a:hover {
     flex-direction: column;
     gap: 2em;
     padding: 0 1em 0 0;
-  }
-  
-  .main-content {
-    min-width: 100%;
-    max-width: none;
-  }
-  
-  .sidebar {
-    min-width: 100%;
-    max-width: none;
   }
 }
 </style> 
