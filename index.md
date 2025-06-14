@@ -15,7 +15,7 @@ Number of posts: {{ site.posts.size }}
   <article>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p>Date: {{ post.date }}</p>
-    <p>{{ post.excerpt }}</p>
+    <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
   </article>
 {% endfor %}
 
