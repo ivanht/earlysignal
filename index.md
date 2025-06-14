@@ -38,8 +38,8 @@ title: EarlySignal
 
 <style>
 body {
-  background-color: white;
-  color: #333;
+  background-color: #1a1a1a;
+  color: white;
 }
 
 .welcome-section {
@@ -51,7 +51,7 @@ body {
 
 .welcome-section h1 {
   font-size: 2.5em;
-  color: #24292e;
+  color: white;
   margin-bottom: 0.5em;
   font-weight: 600;
 }
@@ -59,7 +59,7 @@ body {
 .welcome-text {
   font-size: 1.2em;
   line-height: 1.6;
-  color: #444;
+  color: #e0e0e0;
   margin: 0;
 }
 
@@ -70,7 +70,7 @@ body {
   max-width: 1600px;
   padding: 0 2em 0 0;
   align-items: flex-start;
-  background-color: white;
+  background-color: #1a1a1a;
 }
 
 .main-content {
@@ -83,22 +83,22 @@ body {
 
 h2 {
   margin: 0 0 1.5em 0;
-  color: #333;
-  border-bottom: 2px solid #eee;
+  color: white;
+  border-bottom: 2px solid #333;
   padding-bottom: 0.5em;
   font-size: 1.8em;
 }
 
 h3 {
   margin: 0 0 0.5em 0;
-  color: #333;
+  color: white;
   font-size: 1.4em;
 }
 
 article {
   margin-bottom: 2.5em;
   padding-bottom: 2.5em;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #333;
 }
 
 article:last-child {
@@ -110,16 +110,16 @@ article:last-child {
 article p {
   margin: 0.5em 0;
   line-height: 1.6;
-  color: #444;
+  color: #e0e0e0;
 }
 
 .post-meta {
-  color: #666;
+  color: #b0b0b0;
   font-size: 0.9em;
 }
 
 a {
-  color: #0366d6;
+  color: #66b3ff;
   text-decoration: none;
 }
 
