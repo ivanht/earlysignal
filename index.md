@@ -15,7 +15,6 @@ title: EarlySignal
       {% unless post.categories contains 'announcement' %}
         <article>
           <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-          <p>Date: {{ post.date }}</p>
           <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
         </article>
       {% endunless %}
@@ -28,7 +27,6 @@ title: EarlySignal
       {% if post.categories contains 'announcement' %}
         <article>
           <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-          <p>Date: {{ post.date }}</p>
           <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
         </article>
       {% endif %}
@@ -73,6 +71,10 @@ body {
   background-color: #1a1a1a;
 }
 
+.main-content, .sidebar {
+  padding-top: 1em;
+}
+
 .main-content {
   flex: 1;
 }
@@ -82,12 +84,11 @@ body {
 }
 
 h2 {
-  margin: 0 0 1.5em 0;
+  margin: -1em 0 1.5em 0;
   color: white;
   border-bottom: 2px solid #333;
   padding-bottom: 0.5em;
   font-size: 1.8em;
-  margin-top: -0.5em;
 }
 
 h3 {
