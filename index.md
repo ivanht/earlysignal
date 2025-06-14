@@ -15,7 +15,7 @@ EarlySignal is an innovative project focused on early detection of incorrect sys
         <article>
           <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
           <p>Date: {{ post.date }}</p>
-          <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+          <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
         </article>
       {% endunless %}
     {% endfor %}
@@ -38,28 +38,33 @@ EarlySignal is an innovative project focused on early detection of incorrect sys
 <style>
 .two-column-layout {
   display: flex;
-  gap: 2em;
+  gap: 3em;
   margin-top: 2em;
+  align-items: flex-start;
 }
 
 .main-content {
   flex: 2;
+  min-width: 0; /* Prevents flex item from overflowing */
 }
 
 .sidebar {
   flex: 1;
   min-width: 300px;
+  max-width: 400px;
 }
 
 h2 {
-  margin-top: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
   color: #333;
   border-bottom: 2px solid #eee;
   padding-bottom: 0.5em;
 }
 
 h3 {
-  margin-top: 1em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
   color: #333;
 }
 
@@ -71,6 +76,12 @@ article {
 
 article:last-child {
   border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+article p {
+  margin: 0.5em 0;
 }
 
 .post-meta {
@@ -90,10 +101,12 @@ a:hover {
 @media (max-width: 768px) {
   .two-column-layout {
     flex-direction: column;
+    gap: 2em;
   }
   
   .sidebar {
     min-width: 100%;
+    max-width: none;
   }
 }
 </style> 
