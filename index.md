@@ -40,6 +40,16 @@ body {
   color: white;
 }
 
+.page-header {
+  max-width: none !important;
+  padding: 2rem 6rem !important;
+}
+
+.main-content {
+  max-width: none !important;
+  padding: 2rem 6rem !important;
+}
+
 .welcome-section {
   text-align: center;
   max-width: 800px;
