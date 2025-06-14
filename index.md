@@ -65,7 +65,7 @@ body {
   display: flex;
   gap: 4em;
   margin: 2em 0;
-  max-width: 2000px;
+  max-width: 3000px;
   padding: 0 2em 0 0;
   align-items: flex-start;
   background-color: #1a1a1a;
