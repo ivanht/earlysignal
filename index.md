@@ -38,39 +38,42 @@ EarlySignal is an innovative project focused on early detection of incorrect sys
 <style>
 .two-column-layout {
   display: flex;
-  gap: 3em;
-  margin-top: 2em;
+  gap: 4em;
+  margin: 2em auto;
+  max-width: 1400px;
+  padding: 0 2em;
   align-items: flex-start;
 }
 
 .main-content {
-  flex: 2;
-  min-width: 0; /* Prevents flex item from overflowing */
+  flex: 3;
+  min-width: 0;
+  padding-right: 2em;
 }
 
 .sidebar {
-  flex: 1;
-  min-width: 300px;
-  max-width: 400px;
+  flex: 2;
+  min-width: 400px;
+  max-width: 600px;
 }
 
 h2 {
-  margin-top: 0;
-  margin-bottom: 1em;
+  margin: 0 0 1.5em 0;
   color: #333;
   border-bottom: 2px solid #eee;
   padding-bottom: 0.5em;
+  font-size: 1.8em;
 }
 
 h3 {
-  margin-top: 0;
-  margin-bottom: 0.5em;
+  margin: 0 0 0.5em 0;
   color: #333;
+  font-size: 1.4em;
 }
 
 article {
-  margin-bottom: 2em;
-  padding-bottom: 2em;
+  margin-bottom: 2.5em;
+  padding-bottom: 2.5em;
   border-bottom: 1px solid #eee;
 }
 
@@ -82,6 +85,7 @@ article:last-child {
 
 article p {
   margin: 0.5em 0;
+  line-height: 1.6;
 }
 
 .post-meta {
@@ -98,10 +102,26 @@ a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 1200px) {
+  .two-column-layout {
+    max-width: 100%;
+    gap: 3em;
+  }
+  
+  .sidebar {
+    min-width: 350px;
+  }
+}
+
 @media (max-width: 768px) {
   .two-column-layout {
     flex-direction: column;
     gap: 2em;
+    padding: 0 1em;
+  }
+  
+  .main-content {
+    padding-right: 0;
   }
   
   .sidebar {
