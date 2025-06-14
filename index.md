@@ -96,13 +96,16 @@ h3 {
   margin: 0 0 0.5em 0;
   color: white;
   font-size: 1.4em;
-  padding-bottom: 3em;
+  min-height: 2em;
 }
 
 article {
   margin-bottom: 2.5em;
   padding-bottom: 2.5em;
   border-bottom: 1px solid #333;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 article:last-child {
@@ -115,6 +118,7 @@ article p {
   margin: 0.5em 0;
   line-height: 1.6;
   color: #e0e0e0;
+  flex: 1;
 }
 
 .post-meta {
