@@ -69,8 +69,8 @@ title: EarlySignal
 
 .main-content {
   flex: 1;
-  min-width: 0;
-  padding-right: 2em;
+  min-width: 500px;
+  max-width: 700px;
 }
 
 .sidebar {
@@ -130,7 +130,7 @@ a:hover {
     gap: 3em;
   }
   
-  .sidebar {
+  .main-content, .sidebar {
     min-width: 450px;
   }
 }
@@ -156,7 +156,8 @@ a:hover {
   }
   
   .main-content {
-    padding-right: 0;
+    min-width: 100%;
+    max-width: none;
   }
   
   .sidebar {
