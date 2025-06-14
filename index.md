@@ -89,32 +89,29 @@ body {
   display: flex;
   gap: 4em;
   margin: 2em 0;
-  max-width: 2000px;
+  max-width: 1600px;
   padding: 0 2em 0 0;
   align-items: flex-start;
   background-color: #1a1a1a;
 }
 
-.main-content, .sidebar {
-  padding-top: 1em;
-}
-
 .main-content {
-  flex: 2;
-  min-width: 800px;
+  flex: 1;
+  padding-top: 0;
 }
 
 .sidebar {
   flex: 1;
-  min-width: 400px;
+  padding-top: 0;
 }
 
 h2 {
-  margin: -1em 0 1.5em 0;
+  margin: 0 0 1.5em 0;
   color: white;
   border-bottom: 2px solid #333;
   padding-bottom: 0.5em;
   font-size: 1.8em;
+  margin-top: 0;
 }
 
 h3 {
