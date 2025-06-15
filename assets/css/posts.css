@@ -169,6 +169,36 @@ pre code {
   color: #d4d4d4 !important; /* Light grey */
 }
 
+/* Command line options */
+.highlight .o,
+.highlight .ow,
+.highlight .p,
+.highlight .pi,
+.highlight .nb,
+.highlight .nn,
+.highlight .nx,
+.highlight .nl,
+.highlight .s2,
+.highlight .s1,
+.highlight .s,
+.highlight .si,
+.highlight .se,
+.highlight .sh,
+.highlight .sc,
+.highlight .sd,
+.highlight .sx,
+.highlight .sr,
+.highlight .ss {
+  color: #d4d4d4 !important; /* Light grey */
+}
+
+/* Ensure --options are light grey */
+.highlight .s2:contains("--"),
+.highlight .s1:contains("--"),
+.highlight .s:contains("--") {
+  color: #d4d4d4 !important;
+}
+
 .back-link {
   margin: 2em 0;
   padding: 0.5em 0;
