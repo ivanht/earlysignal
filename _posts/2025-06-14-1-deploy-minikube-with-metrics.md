@@ -373,10 +373,18 @@ pre {
   color: #24292e;
 }
 
+pre.bash {
+  background-color: #f6f8fa;
+}
+
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9em;
   color: #24292e;
+}
+
+code.bash {
+  background-color: #f6f8fa;
 }
 
 .back-link {
