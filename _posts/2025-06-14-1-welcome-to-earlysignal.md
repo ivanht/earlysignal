@@ -179,4 +179,18 @@ a:hover {
     font-size: 1.2em;
   }
 }
+
+pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  padding: 16px;
+  overflow: auto;
+  color: #24292e;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9em;
+  color: #24292e;
+}
 </style> 

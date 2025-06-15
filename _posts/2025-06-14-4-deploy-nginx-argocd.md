@@ -349,17 +349,17 @@ a:hover {
 }
 
 pre {
-  background-color: #2a2a2a;
+  background-color: #f6f8fa;
   border-radius: 3px;
   padding: 16px;
   overflow: auto;
-  color: #e0e0e0;
+  color: #24292e;
 }
 
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9em;
-  color: #e0e0e0;
+  color: #24292e;
 }
 
 .back-link {
