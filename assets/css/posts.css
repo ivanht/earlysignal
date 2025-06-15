@@ -102,16 +102,71 @@ pre code {
   color: white !important;
 }
 
+/* Keywords */
 .highlight .k,
-.highlight .nb,
-.highlight .o,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  color: #569cd6 !important; /* Light blue */
+}
+
+/* Strings */
 .highlight .s,
-.highlight .si,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
 .highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+  color: #ce9178 !important; /* Light orange */
+}
+
+/* Comments */
 .highlight .c,
 .highlight .c1,
-.highlight .cm {
-  color: white !important;
+.highlight .cm,
+.highlight .cp,
+.highlight .cs {
+  color: #6a9955 !important; /* Light green */
+}
+
+/* Numbers */
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
+  color: #b5cea8 !important; /* Light mint */
+}
+
+/* Functions */
+.highlight .n,
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .nl,
+.highlight .nn,
+.highlight .nx,
+.highlight .py {
+  color: #dcdcaa !important; /* Light yellow */
+}
+
+/* Operators */
+.highlight .o,
+.highlight .ow {
+  color: #d4d4d4 !important; /* Light grey */
 }
 
 .back-link {
