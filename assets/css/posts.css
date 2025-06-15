@@ -74,7 +74,7 @@ a:hover {
 }
 
 pre {
-  background-color: rgb(60, 60, 60);
+  background-color: #1e1e1e;
   padding: 10px;
   border-radius: 4px;
   overflow: auto;
@@ -87,7 +87,7 @@ pre code {
 }
 
 .highlight {
-  background-color: rgb(134, 134, 134);
+  background-color: #1e1e1e;
   border-radius: 4px;
   margin: 1em 0;
 }
