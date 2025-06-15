@@ -285,11 +285,9 @@ You've successfully set up Minikube with metrics enabled and deployed a monitori
 
 Remember to regularly update your tools and review your configurations to ensure optimal performance and security. 
 
-
 <div class="back-link">
   <a href="{{ site.baseurl }}/">← Back to Home</a>
 </div>
-
 
 <style>
 pre {

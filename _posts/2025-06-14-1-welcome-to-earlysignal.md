@@ -5,7 +5,6 @@ date: 2025-06-14
 categories: [announcement]
 ---
 
-
 # Welcome to EarlySignal
 
 EarlySignal is an innovative project focused on early detection of incorrect system and service behaviors using Machine Learning. Our mission is to help organizations identify and address potential issues before they impact their services and users.
@@ -70,20 +69,62 @@ Stay tuned for more updates and features!
 </div>
 
 <style>
-article {
-  margin-bottom: 2em;
-  padding-bottom: 2em;
-  border-bottom: 1px solid #eee;
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.page-header {
+  max-width: none !important;
+  padding: 2rem 6rem !important;
+}
+
+.project-name {
+  margin-bottom: 1.5rem !important;
+}
+
+.project-tagline {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  font-size: 1.5rem !important;
+  line-height: 1.6 !important;
+}
+
+.main-content {
+  max-width: none !important;
+  padding: 2rem 6rem !important;
 }
 
 h1, h2, h3 {
-  color: #333;
-  margin-top: 1.5em;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 1.5em 0 1em 0;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+  font-size: 1.8em;
+}
+
+h3 {
+  margin: 1em 0 0.5em 0;
+  font-size: 1.4em;
+}
+
+p {
+  line-height: 1.6;
+  color: #e0e0e0;
 }
 
 ul, ol {
-  margin-left: 2em;
-  margin-bottom: 1em;
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
 li {
@@ -91,11 +132,11 @@ li {
 }
 
 strong {
-  color: #444;
+  color: white;
 }
 
 a {
-  color: #0366d6;
+  color: #66b3ff;
   text-decoration: none;
 }
 
@@ -104,16 +145,38 @@ a:hover {
 }
 
 .back-link {
-  margin-bottom: 2em;
+  margin: 2em 0;
   padding: 0.5em 0;
 }
 
 .back-link a {
-  color: #666;
+  color: #66b3ff;
   font-size: 0.9em;
 }
 
 .back-link a:hover {
-  color: #0366d6;
+  color: #99ccff;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 1rem 2rem !important;
+  }
+
+  .main-content {
+    padding: 1rem 2rem !important;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
 }
 </style> 
