@@ -373,8 +373,29 @@ pre {
   color: #e0e0e0;
 }
 
-pre.bash {
+pre code {
   background-color: #2d333b;
+  color: #e0e0e0;
+}
+
+.highlight {
+  background-color: #2d333b;
+}
+
+.highlight .bash {
+  background-color: #2d333b;
+}
+
+.highlight .bash .k,
+.highlight .bash .nb,
+.highlight .bash .o,
+.highlight .bash .s,
+.highlight .bash .si,
+.highlight .bash .se,
+.highlight .bash .c,
+.highlight .bash .c1,
+.highlight .bash .cm {
+  color: #e0e0e0;
 }
 
 code {
