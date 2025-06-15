@@ -81,7 +81,7 @@ pre {
 }
 
 pre code {
-  color: #e0e0e0;
+  color: white !important;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9em;
 }
@@ -96,6 +96,22 @@ pre code {
   background-color: transparent;
   padding: 0;
   margin: 0;
+}
+
+.highlight code {
+  color: white !important;
+}
+
+.highlight .k,
+.highlight .nb,
+.highlight .o,
+.highlight .s,
+.highlight .si,
+.highlight .se,
+.highlight .c,
+.highlight .c1,
+.highlight .cm {
+  color: white !important;
 }
 
 .back-link {
