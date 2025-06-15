@@ -3,11 +3,6 @@ layout: default
 title: EarlySignal
 ---
 
-<div class="welcome-section">
-  <h1>Welcome to EarlySignal</h1>
-  <p class="welcome-text">EarlySignal is an innovative project focused on early detection of incorrect system and service behaviors using Machine Learning.</p>
-</div>
-
 <div class="two-column-layout">
   <div class="main-content">
     <h2>Blog Posts</h2>

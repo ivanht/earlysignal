@@ -1,6 +1,6 @@
 remote_theme: pages-themes/cayman@v0.2.0
 title: EarlySignal
-description: Early detection of incorrect system and service behaviors using ML
+description: EarlySignal is an innovative project focused on early detection of incorrect system and service behaviors using Machine Learning.
 show_downloads: false
 google_analytics: # Add your Google Analytics ID here if needed
 
