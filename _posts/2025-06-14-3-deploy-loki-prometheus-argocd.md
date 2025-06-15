@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Deploy Loki and Prometheus Using ArgoCD"
 date: 2025-06-14
 categories: [tutorial]

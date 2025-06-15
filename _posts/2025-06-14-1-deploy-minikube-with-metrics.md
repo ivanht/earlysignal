@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Deploy Minikube with Metrics and Tunnel"
 date: 2024-03-21
 categories: kubernetes monitoring
@@ -290,23 +290,128 @@ Remember to regularly update your tools and review your configurations to ensure
 </div>
 
 <style>
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.page-header {
+  max-width: none !important;
+  padding: 2rem 6rem !important;
+}
+
+.project-name {
+  margin-bottom: 1.5rem !important;
+}
+
+.project-tagline {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  font-size: 1.5rem !important;
+  line-height: 1.6 !important;
+}
+
+.main-content {
+  max-width: none !important;
+  padding: 2rem 6rem !important;
+}
+
+h1, h2, h3 {
+  color: white;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 1.5em 0 1em 0;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+  font-size: 1.8em;
+}
+
+h3 {
+  margin: 1em 0 0.5em 0;
+  font-size: 1.4em;
+}
+
+p {
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+ul, ol {
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+strong {
+  color: white;
+}
+
+a {
+  color: #66b3ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 pre {
-  background-color: #f6f8fa;
+  background-color: #2a2a2a;
   border-radius: 3px;
   padding: 16px;
   overflow: auto;
+  color: #e0e0e0;
 }
 
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9em;
+  color: #e0e0e0;
 }
 
-.yaml {
-  color: #032f62;
+.back-link {
+  margin: 2em 0;
+  padding: 0.5em 0;
 }
 
-.bash {
-  color: #24292e;
+.back-link a {
+  color: #66b3ff;
+  font-size: 0.9em;
+}
+
+.back-link a:hover {
+  color: #99ccff;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 1rem 2rem !important;
+  }
+
+  .main-content {
+    padding: 1rem 2rem !important;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
 }
 </style> 

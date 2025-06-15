@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Deploy ArgoCD Using Helm"
 date: 2025-06-14
 categories: [tutorial]
