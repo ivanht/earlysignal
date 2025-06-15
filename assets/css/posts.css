@@ -188,8 +188,35 @@ pre code {
 .highlight .sd,         /* String doc */
 .highlight .sx,         /* String other */
 .highlight .sr,         /* String regex */
-.highlight .ss {        /* String symbol */
+.highlight .ss,         /* String symbol */
+.highlight .k,          /* Keyword */
+.highlight .kd,         /* Keyword declaration */
+.highlight .kn,         /* Keyword namespace */
+.highlight .kp,         /* Keyword pseudo */
+.highlight .kr,         /* Keyword reserved */
+.highlight .kt,         /* Keyword type */
+.highlight .nc,         /* Name class */
+.highlight .nd,         /* Name decorator */
+.highlight .ne,         /* Name exception */
+.highlight .nf,         /* Name function */
+.highlight .ni,         /* Name entity */
+.highlight .nl,         /* Name label */
+.highlight .nn,         /* Name namespace */
+.highlight .nx,         /* Name other */
+.highlight .py,         /* Name property */
+.highlight .nt,         /* Name tag */
+.highlight .nv,         /* Name variable */
+.highlight .vc,         /* Name variable class */
+.highlight .vg,         /* Name variable global */
+.highlight .vi,         /* Name variable instance */
+.highlight .vm,         /* Name variable magic */
+.highlight .il {        /* Literal number */
   color: #d4d4d4 !important; /* Light grey */
+}
+
+/* Override any other syntax highlighting */
+.highlight * {
+  color: #d4d4d4 !important;
 }
 
 /* Ensure --options are light grey */
