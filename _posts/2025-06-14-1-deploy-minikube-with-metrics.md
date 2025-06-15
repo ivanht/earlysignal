@@ -366,25 +366,25 @@ a:hover {
 }
 
 pre {
-  background-color: #f6f8fa;
+  background-color: #2d333b;
   border-radius: 3px;
   padding: 16px;
   overflow: auto;
-  color: #24292e;
+  color: #e0e0e0;
 }
 
 pre.bash {
-  background-color: #f6f8fa;
+  background-color: #2d333b;
 }
 
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9em;
-  color: #24292e;
+  color: #e0e0e0;
 }
 
 code.bash {
-  background-color: #f6f8fa;
+  background-color: #2d333b;
 }
 
 .back-link {
