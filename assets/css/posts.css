@@ -169,26 +169,26 @@ pre code {
   color: #d4d4d4 !important; /* Light grey */
 }
 
-/* Command line options */
-.highlight .o,
-.highlight .ow,
-.highlight .p,
-.highlight .pi,
-.highlight .nb,
-.highlight .nn,
-.highlight .nx,
-.highlight .nl,
-.highlight .s2,
-.highlight .s1,
-.highlight .s,
-.highlight .si,
-.highlight .se,
-.highlight .sh,
-.highlight .sc,
-.highlight .sd,
-.highlight .sx,
-.highlight .sr,
-.highlight .ss {
+/* Command line options and operators */
+.highlight .o,          /* Operators like +, -, =, etc. */
+.highlight .ow,         /* Word operators like 'and', 'or' */
+.highlight .p,          /* Punctuation */
+.highlight .pi,         /* Punctuation inside strings */
+.highlight .nb,         /* Name built-in (like 'true', 'false') */
+.highlight .nn,         /* Name namespace */
+.highlight .nx,         /* Name other */
+.highlight .nl,         /* Name label */
+.highlight .s,          /* String */
+.highlight .s1,         /* String single */
+.highlight .s2,         /* String double */
+.highlight .si,         /* String interpolated */
+.highlight .se,         /* String escaped */
+.highlight .sh,         /* String heredoc */
+.highlight .sc,         /* String char */
+.highlight .sd,         /* String doc */
+.highlight .sx,         /* String other */
+.highlight .sr,         /* String regex */
+.highlight .ss {        /* String symbol */
   color: #d4d4d4 !important; /* Light grey */
 }
 
