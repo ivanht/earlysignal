@@ -16,6 +16,57 @@ This guide will walk you through setting up Minikube with metrics enabled and co
 - Docker installed
 - Basic understanding of Kubernetes concepts
 
+## Architecture Overview
+
+```mermaid
+graph TD
+    subgraph "Local Machine"
+        A[Docker] --> B[Minikube]
+        B --> C[Kubernetes Components]
+    end
+    
+    subgraph "Kubernetes Components"
+        C --> D[Metrics Server]
+        C --> E[Dashboard]
+        C --> F[Ingress Controller]
+    end
+    
+    subgraph "External Access"
+        G[Minikube Tunnel] --> H[External Services]
+        H --> I[Kubernetes Dashboard]
+        H --> J[Ingress Routes]
+    end
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style G fill:#bfb,stroke:#333,stroke-width:2px
+```
+
+## Deployment Flow
+
+```mermaid
+flowchart TD
+    A[Start Minikube] --> B[Enable Addons]
+    B --> C[Start Tunnel]
+    C --> D[Access Dashboard]
+    D --> E[Verify Metrics]
+    
+    subgraph "Addons Setup"
+        B1[Metrics Server] --> B
+        B2[Dashboard] --> B
+        B3[Ingress] --> B
+    end
+    
+    subgraph "Verification Steps"
+        E1[Check Nodes] --> E
+        E2[Check Pods] --> E
+        E3[Check Services] --> E
+    end
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bfb,stroke:#333,stroke-width:2px
+```
+
 ## Step 1: Start Minikube with Metrics
 
 ```bash
@@ -125,4 +176,4 @@ Remember to regularly update your tools and review your configurations to ensure
 
 <div class="back-link">
   <a href="{{ site.baseurl }}/">← Back to Home</a>
-</div> 
+</div>

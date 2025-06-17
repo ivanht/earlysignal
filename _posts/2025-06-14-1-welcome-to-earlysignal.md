@@ -16,6 +16,31 @@ EarlySignal is an innovative project focused on early detection of incorrect sys
 - Service health analysis
 - Proactive alerting system
 
+## System Architecture
+
+```mermaid
+graph TD
+    A[System Services] -->|Metrics| B[Monitoring Agent]
+    B -->|Collect| C[Time Series DB]
+    C -->|Analyze| D[ML Engine]
+    D -->|Detect| E[Anomaly Detection]
+    E -->|Alert| F[Alert Manager]
+    F -->|Notify| G[Notification Channels]
+    
+    subgraph "EarlySignal Core"
+        B
+        C
+        D
+        E
+        F
+    end
+    
+    subgraph "External Systems"
+        A
+        G
+    end
+```
+
 ## Key Features
 
 1. **Intelligent Monitoring**
