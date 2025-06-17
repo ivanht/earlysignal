@@ -37,9 +37,9 @@ graph TD
         H --> J[Ingress Routes]
     end
     
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style G fill:#bfb,stroke:#333,stroke-width:2px
+    style A fill:#4a4a4a,stroke:#666,stroke-width:2px
+    style B fill:#4a4a4a,stroke:#666,stroke-width:2px
+    style G fill:#4a4a4a,stroke:#666,stroke-width:2px
 </div>
 
 ## Deployment Flow
@@ -63,8 +63,8 @@ flowchart TD
         E3[Check Services] --> E
     end
     
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style E fill:#bfb,stroke:#333,stroke-width:2px
+    style A fill:#4a4a4a,stroke:#666,stroke-width:2px
+    style E fill:#4a4a4a,stroke:#666,stroke-width:2px
 </div>
 
 ## Step 1: Start Minikube with Metrics
