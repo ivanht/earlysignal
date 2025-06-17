@@ -1,0 +1,40 @@
+@import "minima";
+
+// Mermaid diagram styling
+.mermaid {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.mermaid svg {
+  background-color: #2d2d2d;
+}
+
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .node path {
+  fill: #3d3d3d !important;
+  stroke: #666 !important;
+}
+
+.mermaid .edgePath .path {
+  stroke: #666 !important;
+}
+
+.mermaid .edgeLabel {
+  background-color: #2d2d2d !important;
+  color: #fff !important;
+}
+
+.mermaid .label {
+  color: #fff !important;
+}
+
+.mermaid .cluster rect {
+  fill: #2d2d2d !important;
+  stroke: #666 !important;
+} 
