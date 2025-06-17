@@ -107,6 +107,54 @@ grafana:
     limits:
       cpu: 200m
       memory: 512Mi
+  # Enable essential addons
+  plugins:
+    - grafana-piechart-panel
+    - grafana-worldmap-panel
+    - grafana-clock-panel
+    - grafana-simple-json-datasource
+  # Configure default datasources
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+        - name: Prometheus
+          type: prometheus
+          url: http://prometheus-server
+          access: proxy
+          isDefault: true
+        - name: Loki
+          type: loki
+          url: http://loki:3100
+          access: proxy
+  # Enable dashboard provisioning
+  dashboardProviders:
+    dashboardproviders.yaml:
+      apiVersion: 1
+      providers:
+        - name: 'default'
+          orgId: 1
+          folder: ''
+          type: file
+          disableDeletion: false
+          editable: true
+          options:
+            path: /var/lib/grafana/dashboards
+  # Pre-install some useful dashboards
+  dashboards:
+    default:
+      kubernetes-cluster:
+        gnetId: 7249
+        revision: 1
+        datasource: Prometheus
+      kubernetes-pods:
+        gnetId: 6417
+        revision: 1
+        datasource: Prometheus
+      kubernetes-nodes:
+        gnetId: 6418
+        revision: 1
+        datasource: Prometheus
 ```
 
 ## Step 3: Configure Loki
@@ -140,18 +188,8 @@ promtail:
       cpu: 200m
       memory: 512Mi
 
-grafana:
-  enabled: true
-  sidecar:
-    datasources:
-      enabled: true
-  resources:
-    requests:
-      cpu: 100m
-      memory: 256Mi
-    limits:
-      cpu: 200m
-      memory: 512Mi
+# Note: Grafana is installed with Prometheus, so we don't need to install it here
+# The Prometheus Grafana instance will be configured to use Loki as a datasource
 ```
 
 ## Step 4: Create ArgoCD Applications

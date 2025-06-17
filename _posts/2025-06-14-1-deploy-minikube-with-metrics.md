@@ -42,131 +42,7 @@ minikube addons enable ingress
 minikube addons list
 ```
 
-## Step 3: Deploy Prometheus and Loki
-
-Create a `monitoring` directory and add the following files:
-
-### 1. Prometheus Values (prometheus-values.yaml)
-
-```yaml
-server:
-  persistentVolume:
-    enabled: true
-    size: 10Gi
-  resources:
-    requests:
-      cpu: 200m
-      memory: 512Mi
-    limits:
-      cpu: 500m
-      memory: 1Gi
-
-alertmanager:
-  enabled: false
-
-pushgateway:
-  enabled: false
-
-kubeStateMetrics:
-  enabled: true
-  resources:
-    requests:
-      cpu: 50m
-      memory: 64Mi
-    limits:
-      cpu: 100m
-      memory: 128Mi
-
-nodeExporter:
-  enabled: true
-  resources:
-    requests:
-      cpu: 50m
-      memory: 64Mi
-    limits:
-      cpu: 100m
-      memory: 128Mi
-
-grafana:
-  enabled: true
-  adminPassword: "admin"
-  persistentVolume:
-    enabled: true
-    size: 5Gi
-  resources:
-    requests:
-      cpu: 100m
-      memory: 128Mi
-    limits:
-      cpu: 200m
-      memory: 256Mi
-```
-
-### 2. Loki Values (loki-values.yaml)
-
-```yaml
-loki:
-  auth_enabled: false
-  storage:
-    type: filesystem
-  persistence:
-    enabled: true
-    size: 10Gi
-  resources:
-    requests:
-      cpu: 200m
-      memory: 512Mi
-    limits:
-      cpu: 500m
-      memory: 1Gi
-
-promtail:
-  enabled: true
-  resources:
-    requests:
-      cpu: 50m
-      memory: 64Mi
-    limits:
-      cpu: 100m
-      memory: 128Mi
-
-grafana:
-  enabled: true
-  sidecar:
-    datasources:
-      enabled: true
-  resources:
-    requests:
-      cpu: 100m
-      memory: 128Mi
-    limits:
-      cpu: 200m
-      memory: 256Mi
-```
-
-## Step 4: Install Prometheus and Loki
-
-```bash
-# Add Helm repositories
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo add grafana https://grafana.github.io/helm-charts
-helm repo update
-
-# Create monitoring namespace
-kubectl create namespace monitoring
-
-# Install Prometheus
-helm install prometheus prometheus-community/prometheus \
-  --namespace monitoring \
-  --values prometheus-values.yaml
-
-# Install Loki
-helm install loki grafana/loki-stack \
-  --namespace monitoring \
-  --values loki-values.yaml
-```
-
-## Step 5: Set Up Tunnel
+## Step 3: Set Up Tunnel
 
 ```bash
 # Start Minikube tunnel in a separate terminal
@@ -176,7 +52,7 @@ minikube tunnel
 kubectl get svc -A
 ```
 
-## Step 6: Access the Dashboards
+## Step 4: Access the Dashboards
 
 ### Kubernetes Dashboard
 ```bash
@@ -184,33 +60,12 @@ kubectl get svc -A
 minikube dashboard
 ```
 
-### Prometheus
-```bash
-# Port forward Prometheus
-kubectl port-forward svc/prometheus-server -n monitoring 9090:9090
-```
-Access at: http://localhost:9090
-
-### Grafana
-```bash
-# Port forward Grafana
-kubectl port-forward svc/prometheus-grafana -n monitoring 3000:80
-```
-Access at: http://localhost:3000
-Default credentials:
-- Username: admin
-- Password: admin
-
-## Step 7: Verify Metrics Collection
+## Step 5: Verify Metrics Collection
 
 ```bash
 # Check if metrics are being collected
 kubectl top nodes
 kubectl top pods -A
-
-# Check Prometheus targets
-kubectl port-forward svc/prometheus-server -n monitoring 9090:9090
-# Then visit http://localhost:9090/targets
 ```
 
 ## Troubleshooting
@@ -226,25 +81,7 @@ Common issues and solutions:
    kubectl get pods -n kube-system | grep metrics-server
    ```
 
-2. **Prometheus Issues**:
-   ```bash
-   # Check Prometheus pods
-   kubectl get pods -n monitoring -l app=prometheus-server
-   
-   # Check Prometheus logs
-   kubectl logs -n monitoring -l app=prometheus-server
-   ```
-
-3. **Loki Issues**:
-   ```bash
-   # Check Loki pods
-   kubectl get pods -n monitoring -l app=loki
-   
-   # Check Loki logs
-   kubectl logs -n monitoring -l app=loki
-   ```
-
-4. **Tunnel Issues**:
+2. **Tunnel Issues**:
    ```bash
    # Check if tunnel is running
    ps aux | grep "minikube tunnel"
@@ -273,15 +110,16 @@ Common issues and solutions:
 
 ## Conclusion
 
-You've successfully set up Minikube with metrics enabled and deployed a monitoring stack. This setup provides a good foundation for local development and testing.
+You've successfully set up Minikube with metrics enabled. This setup provides a good foundation for local development and testing.
 
 ## Next Steps
 
-1. Configure custom dashboards
-2. Set up alerting rules
-3. Add more monitoring tools
-4. Configure backup and restore
-5. Set up CI/CD pipelines
+1. Deploy a monitoring stack
+2. Configure custom dashboards
+3. Set up alerting rules
+4. Add more monitoring tools
+5. Configure backup and restore
+6. Set up CI/CD pipelines
 
 Remember to regularly update your tools and review your configurations to ensure optimal performance and security. 
 
