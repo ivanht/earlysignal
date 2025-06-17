@@ -18,7 +18,7 @@ This guide will walk you through setting up Minikube with metrics enabled and co
 
 ## Architecture Overview
 
-```mermaid
+<div class="mermaid">
 graph TD
     subgraph "Local Machine"
         A[Docker] --> B[Minikube]
@@ -40,11 +40,11 @@ graph TD
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
     style G fill:#bfb,stroke:#333,stroke-width:2px
-```
+</div>
 
 ## Deployment Flow
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     A[Start Minikube] --> B[Enable Addons]
     B --> C[Start Tunnel]
@@ -65,7 +65,7 @@ flowchart TD
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bfb,stroke:#333,stroke-width:2px
-```
+</div>
 
 ## Step 1: Start Minikube with Metrics
 

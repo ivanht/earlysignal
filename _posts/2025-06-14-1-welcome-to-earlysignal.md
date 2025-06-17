@@ -18,7 +18,7 @@ EarlySignal is an innovative project focused on early detection of incorrect sys
 
 ## System Architecture
 
-```mermaid
+<div class="mermaid">
 graph TD
     A[System Services] -->|Metrics| B[Monitoring Agent]
     B -->|Collect| C[Time Series DB]
@@ -39,7 +39,7 @@ graph TD
         A
         G
     end
-```
+</div>
 
 ## Key Features
 
