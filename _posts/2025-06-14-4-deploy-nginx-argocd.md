@@ -271,4 +271,3 @@ Remember to regularly update your applications and review your configurations to
 <div class="back-link">
   <a href="{{ site.baseurl }}/">← Back to Home</a>
 </div> 
-
